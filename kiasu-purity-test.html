@@ -1,27 +1,250 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Take the Kiasu Purity Test! | AinLovesCode</title>
-        <link rel="icon" href="static/images/favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="static/css/style.css">
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<html lang='en'>
 
-    </head>
-    <body>        
-        <nav>
-            <a class="nav-tab" href="index">Start Here!</a>
-            <a class="nav-tab" href="contact">Let's Chat!</a>
-            <a class="nav-tab active" href="kiasu-purity-test">Take My Kiasu Purity Test</a>
-        </nav>
-        <div class="kiasu-content-div">
-            <h1>Find me on my socials!</h1>
+<head>
+
+    <meta charset='UTF-8' />
+    <title>Take the Kiasu Purity Test!</title>
+
+    <link rel="icon" href="static/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <style>
+        #list {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 300%;
+            font-weight: bold;
+            color: red;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .kiasu-button {
+            text-align: center;
+            width: 10%;
+            border-radius: 20px;
+            background-color: rgba(255, 119, 100, 0.3);
+            color: rgb(0, 0, 5);
+            position: relative;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body id="kiasu-content">
+    <nav style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <a class="nav-tab" href="index">Start Here!</a>
+        <a class="nav-tab" href="contact">Let's Chat!</a>
+        <a class="nav-tab active" href="kiasu-purity-test">Take My Kiasu Purity Test</a>
+    </nav>
+
+
+    <div id="kiasu-content-div">
+        <p>
+        <p><img src='static\images\KiasuPurityBanner.png' style="width: 90%; margin: auto; max-width: 600px;" /></p>
+        <div id='toHide'>
+            <p>
+                <i>
+                    The Kiasu Purity Test is another parody of the Rice Purity Test, but for the brightest minds of
+                    Singapore!
+                </i>
+            </p>
+            <p>
+                <strong>
+                    Caution: You might have to go extra class if you don't get an A.👀
+                    <br />
+                </strong>
+            </p>
+            <br />
+            Click on every item that applies. The more you check off, the higher your score!
+            <br />
+            <br />
+            </p>
+            <div id='list'>
+                <ol>
+                    <li><input type='checkbox' /> Finished all  your assessent books</li>
+                    <li><input type='checkbox' /> Knows what PCK means</li>
+                    <li><input type='checkbox' /> Got scolded by teacher for coming late after recess</li>
+                    <li><input type='checkbox' /> Got scolded by teacher for forgetting to bring a book for "Silent Reading"</li>
+                    <li><input type='checkbox' /> Used phone in class without permission</li>
+                    <li><input type='checkbox' /> Claimed all masks during the distributions</li>
+                    <li><input type='checkbox' /> Panicbought during COVID-19</li>
+                    <li><input type='checkbox' /> Tried to claim multiple masks during in-person distribution</li>
+                    <li><input type='checkbox' /> Cried because you procrastinated</li>
+                    <li><input type='checkbox' /> Cried due to bad grades</li>
+                    <li><input type='checkbox' /> "Forgot" to write name on exam paper so that you have time to "write your last sentence"</li>
+                    <li><input type='checkbox' /> Asked people what their exam answers were immediately after said exam</li>
+                    <li><input type='checkbox' /> Brought multiple calculators to exams</li>
+                    <li><input type='checkbox' /> Continued to write after "pencils down" because the invigilator haven't reached you yet</li>
+                    <li><input type='checkbox' /> Fell asleep on the bus after studying all night</li>
+                    <li><input type='checkbox' /> Forgot something you needed for exam (calculator, dictionary, mathematical set)</li>
+                    <li><input type='checkbox' /> Had to borrow anything for exam</li>
+                    <li><input type='checkbox' /> Revised for a test but told your friends you never</li>
+                    <li><input type='checkbox' /> Studied at Changi Airport</li>
+                    <li><input type='checkbox' /> Studied at Macs/Starbucks/some food place</li>
+                    <li><input type='checkbox' /> Studied for exams at least a week before</li>
+                    <li><input type='checkbox' /> Studied for exams on the day itself</li>
+                    <li><input type='checkbox' /> Studied for exams the night before</li>
+                    <li><input type='checkbox' /> Studied in library</li>
+                    <li><input type='checkbox' /> Studies/Studied/Wants to study at NUS or NTU</li>
+                    <li><input type='checkbox' /> Withdraw from a subject because you kept failing it</li> 
+                    <li><input type='checkbox' /> Finished your food because of a old superstition</li>
+                    <li><input type='checkbox' /> Get scolded for not finishing your food</li>
+                    <li><input type='checkbox' /> Got asked "where the rest of your marks went?"</li>
+                    <li><input type='checkbox' /> Had one of these hairstyles: Dora The Explorer, Mushroom, braids</li>
+                    <li><input type='checkbox' /> Have at least one fo the five C's (cash, car, condo, credit card, coutnry club membership)</li>
+                    <li><input type='checkbox' /> Have at least one unfinished assessment book</li>
+                    <li><input type='checkbox' /> Hid your phone form your parents when they came into the room</li>
+                    <li><input type='checkbox' /> Lost a tupperware</li>
+                    <li><input type='checkbox' /> Phone confiscated for bad grades</li>
+                    <li><input type='checkbox' /> Pretended to sleep when your parents came into the room</li>
+                    <li><input type='checkbox' /> Was caned at home</li>
+                    <li><input type='checkbox' /> Was caned by something that isn't a cane</li>
+                    <li><input type='checkbox' /> Forged parent's signature because you forgot</li>
+                    <li><input type='checkbox' /> Forged parent's signature because you got bad marks</li>
+                    <li><input type='checkbox' /> Have more friends of a different race than your own</li>
+                    <li><input type='checkbox' /> Knows at least one non-English curse word that isn't your mother tongue</li>
+                    <li><input type='checkbox' /> Lepak-ed at HDB void deck</li>
+                    <li><input type='checkbox' /> Lepak-ed at school</li>
+                    <li><input type='checkbox' /> Chionged homework during class</li>
+                    <li><input type='checkbox' /> Chionged homework the class before</li>
+                    <li><input type='checkbox' /> Chionged homework the night before</li>
+                    <li><input type='checkbox' /> Did homework on the way back home</li>
+                    <li><input type='checkbox' /> Did homework on the way to school</li>
+                    <li><input type='checkbox' /> Didn't ACTUALLY "left homework at home"</li>
+                    <li><input type='checkbox' /> Acted in a mediacorp series</li>
+                    <li><input type='checkbox' /> Appeared in any of the following: advertisement, any National Day music video, "Save my World" music video</li>
+                    <li><input type='checkbox' /> Was interviewed and featured in the news</li>
+                    <li><input type='checkbox' /> Was there during the Kids Central era</li>
+                    <li><input type='checkbox' /> Was there when Okto ended</li>
+                    <li><input type='checkbox' /> Was there when Okto replace Kids Central</li>
+                    <li><input type='checkbox' /> "Forgets" the words to the National Anthem</li>
+                    <li><input type='checkbox' /> Enlisted into ns</li>
+                    <li><input type='checkbox' /> Asked someone to line up for you in the canteen to save time queueing up</li>
+                    <li><input type='checkbox' /> Ate food in class during class</li>
+                    <li><input type='checkbox' /> Ate food in class during recess</li>
+                    <li><input type='checkbox' /> Lined up for someone at the canteen</li>
+                    <li><input type='checkbox' /> Attended a "study skills"/"motivational" workshop </li>
+                    <li><input type='checkbox' /> Had to return to Singapore during study abroad/exchange</li>
+                    <li><input type='checkbox' /> Didn't change out of sweaty clothes after PE</li>
+                    <li><input type='checkbox' /> Left school early for any reason (CCA, doctor, etc.)</li>
+                    <li><input type='checkbox' /> Pretended to be sick to skip school and study at home</li>
+                    <li><input type='checkbox' /> Remembers word for word the introduction and ending of English Listening Compre</li>
+                    <li><input type='checkbox' /> Stayed back in school for longer than 12 hours in a day</li>
+                    <li><input type='checkbox' /> Tried to get a second cup of free milo during sports day/cross country</li>
+                    <li><input type='checkbox' /> Went to school even when sick (pre-COVID)</li>
+                    <li><input type='checkbox' /> Forced to go bald due to long hairstyle at school</li>
+                    <li><input type='checkbox' /> Forced to go barber due to long hairstyle at school</li>
+                    <li><input type='checkbox' /> Got at least five latecoming slip</li>
+                    <li><input type='checkbox' /> Got at least one late coming slip</li>
+                    <li><input type='checkbox' /> Got scolded by discipline master</li>
+                    <li><input type='checkbox' /> Had to buy new school tie because you forgot to bring</li>
+                    <li><input type='checkbox' /> Have your phone confiscated for using in class</li>
+                    <li><input type='checkbox' /> Perfect attendance</li>
+                    <li><input type='checkbox' /> Sang school/national anthem in a weird way</li>
+                    <li><input type='checkbox' /> Was caned in school</li>
+                    <li><input type='checkbox' /> Went to detention for latecoming</li>
+                    <li><input type='checkbox' /> Took a photo with MP before</li>
+                    <li><input type='checkbox' /> Participated in NE Mation</li>
+                    <li><input type='checkbox' /> Participated in the "Speak Good English Movement"</li>
+                    <li><input type='checkbox' /> Queue up without knowing what for</li>
+                    <li><input type='checkbox' /> Knows at least one non-English translation of the Singapore Pledge</li>
+                    <li><input type='checkbox' /> Remembers at least two translations of MRT announcements</li>
+                    <li><input type='checkbox' /> Roasted any problematic SG influencer online</li>
+                    <li><input type='checkbox' /> Roasted any Singapore university online</li>
+                    <li><input type='checkbox' /> Sold your used textbook/TYS/assessment book on Carousell</li>
+                    <li><input type='checkbox' /> Uses Singlish everyday</li>
+                    <li><input type='checkbox' /> Participated in the CNB Drug Free SG Competition</li>
+                    <li><input type='checkbox' /> Woke up early to sing the national anthem before all the kids channels were up</li>
+                    <li><input type='checkbox' /> got scolded by that one nice teacher</li>
+                    <li><input type='checkbox' /> Got scolded by a relief teacher</li>
+                    <li><input type='checkbox' /> Got scolded by your favourite teacher</li>
+                    <li><input type='checkbox' /> Have tuition at least once a week?</li>
+                    <li><input type='checkbox' /> Have tuition at least three times a week?</li>
+                    <li><input type='checkbox' /> Have tuition despite having good grades</li>
+                </ol>
+                <input class='kiasu-button' id='submit' type='submit' value='Calculate My Score!'>
+                <input class='kiasu-button' id='reset' type='submit' value='Clear checkboxes'>
+            </div>
         </div>
-        
-        <script>$('.nav-tab').on('click', function() {
-            //    Remove .active class from all .tab class elements
-            $('.nav-tab').removeClass('active');
-            //    Add .active class to currently clicked element
-            $(this).addClass('active');
-        })</script>;
-    </body>
+        <div id="toShow">
+            <h2 id='test'>Your Grade:</h2>
+            <h1 id='score'></h1>
+            <h1 id='percent'></h1>
+            <h3 id='description'></h3>
+        </div>
+        <br />
+        <div id="ain-credits">
+            <p> This parody test was recreated by <a href="https://www.tiktok.com/@ainlovescode">@ainlovescode on
+                    TikTok!</a></p>
+            <p> You can find my socials at <a href="contact.html">here,</a> or click on the "Let's Chat!" tab at the
+                top!
+            </p>
+            <p> © Official Kiasu Purity Test by Ainul Mardhiyyah. Design inspired by the Thresher Rice Purity Test.</p>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        document.getElementById('toShow').style.display = 'none';
+
+        document.getElementById('submit').addEventListener('click', () => {
+            const checked_kiasu_elems_list = document.querySelectorAll('input[type=checkbox]:checked');
+
+            const kiasu_purity_score = checked_kiasu_elems_list.length;
+
+            let kiasu_purity_grade, kiasu_purity_description;
+
+            if (kiasu_purity_score > 99) {
+                kiasu_purity_grade = 'SSS'
+                kiasu_purity_description = 'Can go uni already sia WHY YOU HERE??'
+            } else if (kiasu_purity_score > 74) {
+                kiasu_purity_grade = 'A1'
+                kiasu_purity_description = 'Can lah...but WHERE THE REST OF YOUR MARKS FLY HAH??'
+            } else if (kiasu_purity_score > 69) {
+                kiasu_purity_grade = 'A2'
+                kiasu_purity_description = 'Just study only not that hard right??'
+            } else if (kiasu_purity_score > 64) {
+                kiasu_purity_grade = 'B3'
+                kiasu_purity_description = 'Did you study onnot??'
+            } else if (kiasu_purity_score > 59) {
+                kiasu_purity_grade = 'B4'
+                kiasu_purity_description = 'SEE?! PLAY TOO MUCH WITH YOUR FRIENDS RIGHT??'
+            } else if (kiasu_purity_score > 54) {
+                kiasu_purity_grade = 'C5'
+                kiasu_purity_description = 'This is ALLL because of your phone!'
+            } else if (kiasu_purity_score > 49) {
+                kiasu_purity_grade = 'C6'
+                kiasu_purity_description = 'No more phone until you improve!'
+            } else if (kiasu_purity_score > 44) {
+                kiasu_purity_grade = 'D7'
+                kiasu_purity_description = 'I am not asking for a lot you know...Just good marks...'
+            } else if (kiasu_purity_score > 39) {
+                kiasu_purity_grade = 'E8'
+                kiasu_purity_description = 'Bring the rotan here. NOW.'
+            } else {
+                kiasu_purity_grade = 'F9'
+                kiasu_purity_description = '[RETAINED]'
+            }
+
+            document.getElementById('score').innerText = `${kiasu_purity_grade}, ${kiasu_purity_score}/100`;
+            document.getElementById('description').innerText = `${kiasu_purity_description}`;
+
+            document.getElementById('toShow').style.display = 'block';
+            document.getElementById('toHide').style.display = 'none';
+        });
+
+        document.getElementById('reset').addEventListener('click', () => {
+            Array.from(document.querySelectorAll('input[type=checkbox]')).forEach((checkbox) => {
+                checkbox.checked = false;
+            })
+        })
+    </script>
+</body>
+
 </html>

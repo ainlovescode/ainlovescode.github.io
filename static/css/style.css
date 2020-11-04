@@ -1,47 +1,51 @@
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin:0;
-    
-    
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
 }
 nav {
   overflow: hidden;
-  background-color: #FF97B7;
+  background-color: #ff97b7;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
 .nav-tab {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
 .nav-tab.active {
-    background-color: #ff5d8f;
-    color: #FADDE1;
+  background-color: #ff5d8f;
+  color: #fadde1;
 }
-  
-nav a:hover {
-    background: #ee3180;
-    color: #FADDE1;
-  }
 
-  .content-div{
-    padding:20px;
-    margin-top:30px;
-    background-color:#FADDE1;
-    height:1500px;
+nav a:hover {
+  background: #ee3180;
+  color: #fadde1;
 }
-.kiasu-content-div{
-    padding:20px;
-    margin-top:30px;
-    background-color:#FBEEC8;
-    height:1500px;
+
+.content-div {
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #fadde1;
+  height: 1500px;
 }
-  
+#kiasu-content {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+  background-color: #fbeec8;
+  background-image: url('..\\images\\KiasuPurityBg.png');
+}
+
+#kiasu-content-div{
+
+    padding: 20px;
+}
