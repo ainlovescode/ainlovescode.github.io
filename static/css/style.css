@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 body {
-    font-family: 'Open Sans', sans-serif;  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #ee3180;
 }
 nav {
   overflow: hidden;
@@ -11,15 +16,16 @@ nav {
   width: 100%;
 }
 
-.nav-tab {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+
+  .nav-tab {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
 
 .nav-tab.active {
   background-color: #ff5d8f;
@@ -31,20 +37,20 @@ nav a:hover {
   color: #fadde1;
 }
 
-
 .contact-button {
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius:10px;
-    font-family: 'Open Sans', sans-serif;  margin: 0;
-  }
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
 
 .content-div {
   padding: 20px;
@@ -58,10 +64,56 @@ nav a:hover {
   font-family: "Times New Roman", Times, serif;
   height: 100%;
   background-color: #fbeec8;
-  background-image: url('..\\images\\KiasuPurityBg.png');
+  background-image: url("..\\images\\KiasuPurityBg.png");
 }
 
-#kiasu-content-div{
+#kiasu-content-div {
+  padding: 20px;
+}
 
-    padding: 20px;
+/* FAQ STYLING */
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid grey;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion-active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion-panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: "\25BC"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-active:after {
+  content: "\25B2"; /* Unicode character for "minus" sign (-) */
+}
+
+#faq-content {
+  width: 75%;
+  margin: auto;
 }
