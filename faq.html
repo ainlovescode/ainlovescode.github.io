@@ -7,33 +7,89 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   </head>
   <body>
-    <nav>
-      <a class="nav-tab" href="index.html">🏠 Start Here!</a>
-      <a class="nav-tab" href="my-works.html">👩🏻‍💻 My Works</a>
-      <a class="nav-tab" href="kiasu-purity-test.html"
-        >📝 Take My Kiasu Purity Test</a
-      >
-      <a class="nav-tab active" href="faq.html">🤔 FAQ</a>
+    <nav style="font-family: 'Open Sans'">
+        <a class="nav-tab" style="padding: 0px;" href="index.html"><img src="static/images/favicon.ico"
+                style="height: 36px; padding:5px;"></a>
+        <div style="float:right">
+            <a class="nav-tab" href="index.html">🏠 Start Here!</a>
+            <a class="nav-tab" href="my-works.html">👩🏻‍💻 My Works</a>
+            <a class="nav-tab active" href="kiasu-purity-test.html">📝 Take My Kiasu Purity Test</a>
+            <a class="nav-tab" href="faq.html">🤔 FAQ</a>
+        </div>
     </nav>
+
     <div id="faq-intro" class="content-div">
       <h1>Here are some of my most Frequently Asked Questions!</h1>
       <i>Updated on 5 November 2020</i>
-      <hr/>      
-      <h3>Tell me about yourself!</h3>
-      <p>
-        Hello! I'm Ainul and I'm a Software Developer from Singapore! I
-        graduated from university late 2020.
-      </p>
+      <hr />
+      <div id="faq-content">
+        <button class="accordion">Tell me about yourself!</button>
+        <div class="accordion-panel">
+          <p>
+            Hello! I'm Ainul and I'm a Software Developer from Singapore! I
+            graduated from university late 2020.
+          </p>
+        </div>
 
-      <h3>Which university did you go to?</h3>
-      <p>
-        I studied at the Singapore University of Technology and Design, and
-        graduated with a Bachelor's of Engineering (Information Systems
-        Technology and Design).
-      </p>
+        <button class="accordion">Which university did you go to?</button>
+        <div class="accordion-panel">
+          <p>
+            I studied at the Singapore University of Technology and Design, and
+            graduated with a Bachelor's of Engineering (Information Systems
+            Technology and Design).
+          </p>
+        </div>
 
-      <h3>When did you first start coding?</h3>
-      <p>My first time learning how to code is Python during my first year of university in 2017!</p>
+        <button class="accordion">When did you first start coding?</button>
+        <div class="accordion-panel">
+          <p>
+            My first time learning how to code is Python during my first year of
+            university in 2017!
+          </p>
+        </div>
+
+        <button class="accordion">
+          How do you solve coding problems when you are stuck?
+        </button>
+        <div class="accordion-panel">
+          <p>
+            I Google online for tips and examples! Sometimes I also ask my
+            friends from school and the tech communities I'm in.
+          </p>
+        </div>
+
+        <button class="accordion">
+          I want to learn how to code! Any advice for a beginner?
+        </button>
+        <div class="accordion-panel">
+          <p>
+            I'm a huge believer in free learning resources. I recommend learning
+            Python or JavaScript on
+            <a href="https://www.hackerrank.com">HackerRank</a>, and following
+            tutorials on Youtube and
+            <a href="https://www.freecodecamp.org">freeCodeCamp</a>. All of
+            these sites have awesome coding lessons for free!
+          </p>
+        </div>
+      </div>
     </div>
+
+    <!-- SCRIPTS -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("accordion-active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
