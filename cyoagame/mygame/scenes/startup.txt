@@ -1,0 +1,82 @@
+*comment Copyright 2010 by Dan Fabulich.
+*comment 
+*comment Dan Fabulich licenses this file to you under the
+*comment ChoiceScript License, Version 1.0 (the "License"); you may
+*comment not use this file except in compliance with the License. 
+*comment You may obtain a copy of the License at
+*comment 
+*comment  http://www.choiceofgames.com/LICENSE-1.0.txt
+*comment 
+*comment See the License for the specific language governing
+*comment permissions and limitations under the License.
+*comment 
+*comment Unless required by applicable law or agreed to in writing,
+*comment software distributed under the License is distributed on an
+*comment "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+*comment either express or implied.
+
+*title My First ChoiceScript Game
+*author Anonymous
+*scene_list
+  startup
+  ending
+
+*create leadership 50
+*create strength 50
+
+Welcome to your very first ChoiceScript game!
+
+Copyright 2010 by Dan Fabulich.
+
+Dan Fabulich licenses this file to you under the
+ChoiceScript License, Version 1.0 (the "License"); you may
+not use this file except in compliance with the License. 
+You may obtain a copy of the License at
+
+*link http://www.choiceofgames.com/LICENSE-1.0.txt
+
+See the License for the specific language governing
+permissions and limitations under the License.
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied.
+
+*page_break
+*image images/PandemicRedDotBanner.png
+It was the 2021 Results Release
+
+Your heart was pounding in your ears as you watched your Principal walk on stage. You could almost hear the blood rushing in your veins, desperately hoping for the best.
+
+Anyone would be nervous getting their national examination results, but unlike other years, you and many other graduates sitting around you were and still are living through a global pandemic.
+
+Let's confirm a few things. Which national exam did you do last year?
+
+*choice
+  #I did my GCE A Levels last year.
+    That's great! I hope you get into the university you want.
+    *gosub study
+    *finish
+  #It was tough, but  I think the O Levels was ok.
+    That's great! I hope you get into the course you want.
+    *gosub study
+    *finish
+  #I took the N Levels.
+    That's great! I hope you get into the course you want.
+    *gosub study
+    *finish
+
+*label study
+And what was it like for you studying for the exams during a pandemic?
+
+*choice
+  #I usually studied in school. My parents could not afford tuition, and it can be really distracting to study at home.
+    I've been there. The classroom are really quiet after school too!
+  #I usually studied at home. I don't have tuition, and I need to help do the chores and take care of my siblings.
+    It can't be easy - juggling school and family commitments.
+  #I usually studied at home. I have tuition a few times a week, so at least I can ask my tutor any questions I have.
+    It's always great to get some extra help!
+  #I usually studied at home. My parents let me study in my room alone, and it really helps me focus!
+    Having supportive parents at home really helps with focusing on school, doesn't it?
+
